@@ -106,7 +106,7 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
- background: url('/src/imgs/stockPreview.jpg') no-repeat;
+ background: url('/ReactFluxStockLookup/src/imgs/stockPreview.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
    -webkit-filter: blur(2px);

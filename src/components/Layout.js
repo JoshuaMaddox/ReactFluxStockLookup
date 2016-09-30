@@ -21,8 +21,8 @@ render() {
     return (
       <div className='container'>
     
-          <video poster="/src/imgs/stockPreview.jpg" id="bgvid" playsInLine autoPlay muted loop >
-            <source src="/src/video/stock.mp4" type="video/mp4" />
+          <video poster="/ReactFluxStockLookup/src/imgs/stockPreview.jpg" id="bgvid" playsInLine autoPlay muted loop >
+            <source src="/ReactFluxStockLookup/src/video/stock.mp4" type="video/mp4" />
           </video>
           <div className="row topRow">
             <div className="col-sm-4">

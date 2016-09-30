@@ -6,10 +6,10 @@ import SymbolSearch from './components/SymbolSearch'
 import DetailedView from './components/DetailedView'
 
 render(
-  <Router history={browserHistory}>
+  <Router>
     <Route path='/ReactFluxStockLookup/' component={Layout}>
-      <Route path='/search-by-symbol' component={SymbolSearch}></Route>
-      <Route  path='/detailed-view' component={DetailedView}></Route>
+      <Route path='/ReactFluxStockLookup/search-by-symbol' component={SymbolSearch}></Route>
+      <Route  path='/ReactFluxStockLookup/detailed-view' component={DetailedView}></Route>
     </Route>
   </Router>,
   document.getElementById('root')

@@ -7,9 +7,9 @@ import DetailedView from './components/DetailedView'
 
 render(
   <Router history={browserHistory}>
-    <Route path='/' component={Layout}>
-      <Route path='/search-by-symbol' component={SymbolSearch}></Route>
-      <Route  path='/detailed-view' component={DetailedView}></Route>
+    <Route path='/ReactFluxStockLookup/' component={Layout}>
+      <Route path='/ReactFluxStockLookup/search-by-symbol' component={SymbolSearch}></Route>
+      <Route  path='/ReactFluxStockLookup/detailed-view' component={DetailedView}></Route>
     </Route>
   </Router>,
   document.getElementById('root')

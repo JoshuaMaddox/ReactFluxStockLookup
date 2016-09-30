@@ -9,7 +9,7 @@ const API = {
     console.log('IN apipromise', ticker)
     let promise = new Promise((resolve, reject) => {
       console.log('IN apipromise', ticker)
-      jsonp(`//dev.markitondemand.com/MODApis/Api/v2/Lookup/jsonp?input=${ticker}`, (err1, tickerInfo) => {
+      jsonp(`http://dev.markitondemand.com/MODApis/Api/v2/Lookup/jsonp?input=${ticker}`, (err1, tickerInfo) => {
         if(err1) {
           reject(err1)
         } else {
@@ -22,7 +22,7 @@ const API = {
     // Used to find the type of promise and what's contained inside: console.log('typeof promise: ', typeof promise, 'promise = ', promise);
     promise
     .then((tickerInfo) => {
-        jsonp(`//dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol=${tickerInfo[0].Symbol}`, (err, details) => {
+        jsonp(`http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol=${tickerInfo[0].Symbol}`, (err, details) => {
           console.log('APIpromise tickerInfo: ', tickerInfo)
           console.log('APIpromise details', details)
           return LookupAction.receiveTicker(tickerInfo, details)
